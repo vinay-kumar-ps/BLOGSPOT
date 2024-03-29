@@ -1,11 +1,7 @@
 package domain
 
-import "time"
-
-type Follow struct{
-	ID int  `json:"id"`
-	FollowerID int `json:"follower_id"`
-	FollowingID int `json:"following_id"`
-	FollowedAt time.Time `json:"followed_at"`
-
+// Follow represents a user following another user.
+type Follow struct {
+    FollowerID string `json:"follower_id"`
+    FollowingID string `json:"following_id"`
 }

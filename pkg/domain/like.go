@@ -1,11 +1,8 @@
 package domain
 
-import "time"
-
+// Like represents a user liking a post or comment.
 type Like struct {
-	ID        int       `json:"id"`
-	UserID    int       `json:"user_id"`
-	PostID    int       `json:"post_id"`
-	CommentID int       `json:"comment_id"`
-	LikedAT   time.Time `json:"liked_at"`
+    UserID   string `json:"user_id"`
+    EntityID string `json:"entity_id"`
+    EntityType string `json:"entity_type"` // "post" or "comment"
 }

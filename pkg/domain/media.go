@@ -6,5 +6,5 @@ type Media struct {
 	CommentID   int    `json:"comment_id"`
 	Filename    string `json:"filename"`
 	ContentType string `json:"content_type"`
-	Size        int64  `json:""`
+	Size        int64  `json:"size"`
 }
